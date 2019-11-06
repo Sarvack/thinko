@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Biodata Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="../style1-document.write/css/styles.css">
+    <script src="../style1-document.write/java.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="contact-form">
+            <form action="" id="form" method="" name="biodata" onSubmit="validasi()">
+                <div>
+                    <center>
+                        <label>Nama Lengkap :</label>
+                        <input type="text" name="nama" id="nama" />
+                    </center>
+                </div>
+                <br />
+                <div>
+                    <center>
+                        <label>Email :</label>
+                        <input type="email" name="email" id="email" onkeyup="ValidateEmail();" />
+                    </center>
+                </div>
+                <br />
+                <div>
+                    <center>
+                        <label>No Hp :</label>
+                        <input type="text" onkeypress="return hanyaAngka(event)" name="nohp" id="nohp" />
+                    </center>
+                </div>
+                <div>
+                    <br />
+                    <br />
+                    <center>
+                        <button type="submit" onclick="Submit()">DAFTAR</button>
+                    </center>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
